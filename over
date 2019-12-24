@@ -1,0 +1,444 @@
+int led = 13;
+void setup() {
+  pinMode(led,OUTPUT);
+}
+
+
+//显示duan 点
+void morseDot(){
+ 
+    digitalWrite(led,HIGH);
+    delay(100);
+    digitalWrite(led,LOW);
+    delay(100);
+  
+}
+//显示chang 破折号
+void morseDash(){
+  
+    digitalWrite(led,HIGH);
+    delay(1000);
+    digitalWrite(led,LOW);
+    delay(1000);
+  
+}
+
+
+
+void GetChar(char tmpChar)
+{
+  switch (tmpChar) {
+    case 'a':
+    morseDot();
+    delay(100);
+    morseDash();
+    delay(100);
+    break;
+
+     case 'b':  
+    morseDash();
+    delay(100);
+    morseDot();
+    delay(100);
+    morseDot();
+    delay(100);
+    morseDot();
+    delay(100);
+    break;
+
+     case 'c':
+    morseDash();
+    delay(100);
+    morseDot();
+    delay(100);
+    morseDash();
+    delay(100);
+    morseDot();
+    delay(100);
+    break;
+
+
+     case 'd':
+    morseDash();
+    delay(100);
+    morseDot();
+    delay(100);
+    morseDot();
+    delay(100);
+    break;
+
+     case 'e':
+    morseDot();
+    delay(100);
+    break;
+
+     case 'f':
+    morseDot();
+    delay(100);
+    morseDot();
+    delay(100);
+    morseDash();
+    delay(100);
+    morseDot();
+    delay(100);
+    break;
+
+     case 'g':
+    morseDash();
+    delay(100);
+    morseDash();
+    delay(100);
+    morseDot();
+    delay(100);
+    break;
+
+     case 'h':
+     for(int i=1;i<=4;i++)
+    morseDot();
+    delay(100);
+    break;
+
+     case 'i':
+    morseDot();
+    delay(100);
+    morseDot();
+    delay(100);
+    break;
+
+     case 'j':
+    morseDot();
+    delay(100);
+    morseDash();
+    delay(100);
+    morseDash();
+    delay(100);
+    morseDash();
+    delay(100);
+    break;
+
+
+     case 'k':
+    morseDash();
+    delay(100);
+    morseDot();
+    delay(100);
+    morseDash();
+    delay(100);
+    break;
+
+     case 'l':
+    morseDot();
+    delay(100);
+    morseDash();
+    delay(100);
+    morseDot();
+    delay(100);
+    morseDot();
+    delay(100);
+    break;
+
+
+     case 'm':
+    morseDash();
+    delay(100);
+    morseDash();
+    delay(100);
+    break;
+
+
+     case 'n':
+    morseDash();
+    delay(100);
+    morseDot();
+    delay(100);
+    break;
+
+
+     case 'o':
+    for(int i=1;i<=3;i++){
+        morseDash();
+        delay(100);
+    }
+    break;
+
+     case 'p':
+    morseDot();
+    delay(100);
+    morseDash();
+    delay(100);
+    morseDash();
+    delay(100);
+    morseDot();
+    delay(100);
+    break;
+
+
+     case 'q':
+   	morseDash();
+    delay(100);
+    morseDash();
+    delay(100);
+    morseDot();
+    delay(100);
+    morseDash();
+    delay(100);
+    break;
+
+
+
+     case 'r':
+    morseDash();
+    delay(100);
+    morseDot();
+    delay(100);
+    morseDash();
+    delay(100);
+    break;
+
+     case 's':
+    morseDot();
+    delay(100);
+    morseDot();
+    delay(100);
+    morseDot();
+    delay(100);
+    break;
+
+
+    case 't':
+    morseDash();
+    delay(100);
+    break;
+
+
+     case 'u':
+    morseDot();
+    delay(100);
+    morseDot();
+    delay(100);
+    morseDash();
+    delay(100);
+    break;
+
+
+     case 'v':
+    morseDot();
+    delay(100);
+    morseDot();
+    delay(100);
+    morseDot();
+    delay(100);
+    morseDash();
+    delay(100);
+    break;
+
+
+     case 'w':
+    morseDot();
+    delay(100);
+    morseDash();
+    delay(100);
+    morseDash();
+    delay(100);
+    break;
+
+
+     case 'x':
+    morseDash();
+    delay(100);
+    morseDot();
+    delay(100);
+    morseDot();
+    delay(100);
+    morseDash();
+    delay(100);
+    break;
+
+
+     case 'y':
+    morseDash();
+    delay(100);
+    morseDot();
+    delay(100);
+    morseDash();
+    delay(100);
+    morseDash();
+    delay(100);
+    break;
+
+
+     case 'z':
+    morseDash();
+    delay(100);
+    morseDash();
+    delay(100);
+    morseDot();
+    delay(100);
+    morseDot();
+    delay(100);'
+    break;
+
+
+     case '1':
+    morseDot();
+    delay(100);
+    morseDash();
+    delay(100);
+    morseDash();
+    delay(100);
+    morseDash();
+    delay(100);
+    morseDash();
+    delay(100);
+    break;
+
+
+
+     case '2':
+    morseDot();
+    delay(100);
+    morseDot();
+    delay(100);
+    morseDash();
+    delay(100);
+    morseDash();
+    delay(100);
+    morseDash();
+    delay(100);
+    break;
+
+
+     case '3':
+    morseDot();
+    delay(100);
+    morseDot();
+    delay(100);
+    morseDot();
+    delay(100);
+    morseDash();
+    delay(100);
+    break;
+
+     case '4':
+    morseDot();
+    delay(100);
+    morseDot();
+    delay(100);
+    morseDot();
+    delay(100);
+    morseDot();
+    delay(100);
+    morseDash();
+    delay(100);
+    break;
+
+     case '5':
+    morseDot();
+    delay(100);
+    morseDot();
+    delay(100);
+    morseDot();
+    delay(100);
+    morseDot();
+    delay(100);
+    morseDot();
+    delay(100);
+    break;
+
+     case '6':
+    morseDot();
+    delay(100);
+    morseDash();
+    delay(100);
+    morseDash();
+    delay(100);
+	morseDash();
+    delay(100);
+	morseDash();
+    delay(100);
+    break;
+
+     case '7':
+    morseDot();
+    delay(100);
+    morseDot();
+    delay(100);
+    morseDash();
+    delay(100);
+    morseDash();
+    delay(100);
+    morseDash();
+    delay(100);
+    break;
+
+
+     case '8':
+    morseDash();
+    delay(100);
+    morseDash();
+    delay(100);
+    morseDash();
+    delay(100);
+    morseDot();
+    delay(100);
+    morseDot();
+    delay(100);
+    break;
+
+     case '9':
+    morseDash();
+    delay(100);
+    morseDash();
+    delay(100);
+    morseDash();
+    delay(100);
+    morseDash();
+    delay(100);
+    morseDot();
+    delay(100);
+    break;
+
+     case '0':
+    morseDash();
+    delay(100);
+    morseDash();
+    delay(100);
+    morseDash();
+    delay(100);
+    morseDash();
+    delay(100);
+    morseDash();
+    delay(100);
+    break;
+
+ 
+
+    default:
+       break;
+  }
+}
+
+
+
+void loop()
+{
+  
+   char str[] = "hello";
+   int n = sizeof(str) ;
+   for(int i=0;i<n;i++){
+      delay(2000); 
+      GetChar(str[i]);
+  
+    }
+
+
+
+   /*   GetChar('h'); 
+      GetChar('e');
+      GetChar('l');
+      GetChar('l');
+      GetChar('o');
+      GetChar('w');
+   */
+
+}
